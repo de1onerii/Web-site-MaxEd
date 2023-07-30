@@ -1,0 +1,31 @@
+*{
+    background-color: rgb(57, 57, 57);
+}
+.square{
+    width: 300px;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Google Sans;
+    border-radius: 20px;
+}
+.square:hover{
+    animation-name: square;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 3;
+}
+@keyframes square {
+    0%{
+        background-color: rgb(255, 255, 255);
+    }
+    50%{
+        background-color: green;
+    }
+    100%{
+        background-color: white;
+    }
+}
